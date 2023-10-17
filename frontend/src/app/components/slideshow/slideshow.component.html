@@ -1,0 +1,33 @@
+<!-- Slider main container -->
+<div class="row mt-2">
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div *ngFor="let noti of noticias ; index as i;"  class="swiper-slide"
+      [ngStyle]="{
+        'background-size':'cover',
+         'background-image': 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)) , url('+noti.image_url+')'
+      
+      }"
+      >   
+
+            <div class="slider-noticia mt-8 text-white">
+                <h2><strong>{{ noti.title | slice:0:80 }}</strong></h2>
+               
+            </div>
+            
+               
+      </div>
+     
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div (click)="onClickNext()" class="swiper-button-prev"></div>
+    <div (click)="onClickPrevius()" class="swiper-button-next"></div>
+  
+   
+  </div>
+</div>

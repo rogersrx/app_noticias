@@ -1,0 +1,13 @@
+.swiper {
+    width: 500px;
+    height: 250px;
+  }
+
+  .swiper-button-prev,.swiper-button-next{
+    color: white;
+  }
+
+ .slider-noticia{ 
+  margin-top: 190px;
+  padding: 20px;
+ }
