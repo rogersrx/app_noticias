@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4 mt-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-md-12 mt-2">
+          <label>Usuario</label>
+          <input type="text" 
+                class="form-control" 
+                (keyup)="limpiar()"
+                [(ngModel)]="usuario.nombreUsuario">
+        </div>
+        <div class="col-md-12 mt-2">
+          <label>Password</label>
+          <input type="password" 
+                  class="form-control" 
+                  (keyup)="limpiar()"
+                  [(ngModel)]="usuario.password">
+        </div>
+        <div *ngIf="erros" class="alert alert-danger" role="alert">
+          {{ erros }}
+        </div>
+        <button (click)="login()" class="btn btn-primary mt-2 text-center">Iniciar Session</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+
+  </div>
+
+</div>

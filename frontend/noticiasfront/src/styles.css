@@ -1,0 +1,24 @@
+body {
+    background-color: #efeff1;
+}
+
+
+
+.navbar-brand {
+    font-weight: 200;
+    color: #efeff1 !important;
+}
+
+.btn-outline-success {
+    border-color: #efeff1 !important;;
+    color:  #efeff1 !important;;
+}
+
+.btn-outline-success:hover {
+    background-color: #272a36;
+    color: white !important;
+}
+
+.block {
+    display:block;
+}
