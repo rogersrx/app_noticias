@@ -35,7 +35,8 @@ export class FavoritoComponent {
 
   delete(id:number){
     this.noticiaservice.deleteNoticiafavorite(id).subscribe(resp=>{      
-      Swal.fire('Se eliminó',"", 'success');  
+      Swal.fire('Se eliminó una noticia de favoritos',"", 'success');  
+      this.page=0;
       this.cargarfavoritoini();        
     },err=>{
       Swal.fire('Erro al eliminar  favoritos',"", 'error');     

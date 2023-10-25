@@ -51,9 +51,9 @@ export class NoticiapostergridComponent {
           this.router.navigate(['/usuario'])
         }else{
           this.noticiaservice.guardarfavorito(dato).subscribe(resp =>{
-            Swal.fire('Se agrego a favoritos',"", 'success');          
+            Swal.fire('Se agrego la noticia a tus favoritos',"", 'success');          
             },err=>{
-              Swal.fire('Erro al agregar  favoritos',"", 'error'); 
+              Swal.fire('Se debe registrar o iniciar sesión para agregar a favoritos',"", 'warning'); 
             }
           );
         }
